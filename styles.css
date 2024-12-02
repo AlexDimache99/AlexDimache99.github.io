@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background: #ffffff;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    align-content: center;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.section {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.intro {
+    background: url('Images/banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 1s;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeInDown 2s;
+}
+
+.intro p {
+    font-size: 1.5em;
+    margin: 1em 0;
+    animation: fadeInUp 2s;
+}
+
+.aboutme p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio-item {
+    background: #fff;
+    margin: 1em 0;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+    padding-left: 10%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1.2em;
+    }
+}
+
+footer {
+    padding-left: 1%;
+}
